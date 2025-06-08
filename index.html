@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Uday Creations</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uday Creations Pvt. Ltd.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">Uday Creations Pvt Ltd</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <div class="logo">Uday Creations</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <section id="home" class="hero">
-    <h1>Playground & Outdoor Gym Equipment Manufacturer</h1>
-    <p>Manufacturing slides, swings, multiplay systems since 1996.</p>
-    <a href="#contact" class="btn">Get a Quote</a>
+    <div class="container">
+      <h1>Leading Manufacturer of Playground Equipment</h1>
+      <p>Providing safe and fun solutions for kids' play areas since 1996.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
   </section>
+
   <section id="products" class="products">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="slide.jpg" alt="Slide"/>
-        <h3>Playground Slides</h3>
-      </div>
-      <div class="product-card">
-        <img src="swing.jpg" alt="Swing"/>
-        <h3>Swings & See-Saws</h3>
-      </div>
-      <div class="product-card">
-        <img src="multiplay.jpg" alt="Multiplay"/>
-        <h3>Multiplay Systems</h3>
-      </div>
-      <div class="product-card">
-        <img src="outdoor-gym.jpg" alt="Outdoor Gym"/>
-        <h3>Outdoor Gym Equipments</h3>
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="slide.jpg" alt="Slides">
+          <h3>Playground Slides</h3>
+        </div>
+        <div class="product-card">
+          <img src="swing.jpg" alt="Swings">
+          <h3>Swings & See-Saws</h3>
+        </div>
+        <div class="product-card">
+          <img src="multiplay.jpg" alt="Multiplay">
+          <h3>Multiplay Systems</h3>
+        </div>
+        <div class="product-card">
+          <img src="gym.jpg" alt="Outdoor Gym">
+          <h3>Outdoor Gym Equipment</h3>
+        </div>
       </div>
     </div>
   </section>
+
   <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <!-- Add your images or video thumbnails -->
-      <img src="gallery1.jpg" alt="Product Image"/>
-      <img src="gallery2.jpg" alt="Product Image"/>
-      <img src="gallery3.jpg" alt="Product Image"/>
-      <img src="gallery4.jpg" alt="Product Image"/>
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="gallery1.jpg" alt="Gallery Image 1">
+        <img src="gallery2.jpg" alt="Gallery Image 2">
+        <img src="gallery3.jpg" alt="Gallery Image 3">
+        <img src="gallery4.jpg" alt="Gallery Image 4">
+      </div>
     </div>
   </section>
+
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Email Address" required/>
-      <textarea name="message" placeholder="Your Requirements"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
+
   <footer>
-    <p>&copy; 2025 Uday Creations Private Limited</p>
+    <div class="container">
+      <p>&copy; 2025 Uday Creations Pvt. Ltd. All rights reserved.</p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
