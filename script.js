@@ -1,25 +1,13 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const form = event.target;
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  };
-  
-  // Example: send form via fetch to your API
-  fetch('/api/send-inquiry', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  })
-  .then(r => {
-    if (r.ok) {
-      alert('Thank you! We will reach out to you shortly.');
-      form.reset();
-    } else {
-      alert('Oops! Something went wrong.');
-    }
-  })
-  .catch(() => alert('Network error. Please try again.'));
-});
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = e.target.name.value;
+      const email = e.target.email.value;
+      const message = e.target.message.value;
+
+      if (name && email && message) {
+        alert("Thank you, " + name + "! Your message has been sent.");
+        e.target.reset();
+      } else {
+        alert("Please fill in all fields.");
+      }
+    });
